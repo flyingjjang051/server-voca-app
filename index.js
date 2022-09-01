@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv").config();
 const cors = require("cors");
+const history = require("connect-history-api-fallback");
 app.set("port", process.env.PORT || 8099);
 const PORT = app.get("port");
 app.use(cors());
@@ -22,6 +23,7 @@ MongoClient.connect(process.env.MONGO_URL, { useUnifiedTopology: true }, (err, c
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "/public")));
+app.use(history());
 
 app.get("/", (req, res) => {
   res.send("hello voca-app");
