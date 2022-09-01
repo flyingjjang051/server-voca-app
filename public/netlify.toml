@@ -1,0 +1,28 @@
+[[redirects]]
+  from = "https://melodious-lily-161265.netlify.app/voca/*"
+  to = "https://melodious-lily-161265.netlify.app/"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "https://melodious-lily-161265.netlify.app/days/*"
+  to = "https://melodious-lily-161265.netlify.app/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://melodious-lily-161265.netlify.app/day/*"
+  to = "https://melodious-lily-161265.netlify.app/"
+  status = 301
+  force = true
+  
+  [[redirects]]
+  from = "https://melodious-lily-161265.netlify.app/insert/*"
+  to = "https://melodious-lily-161265.netlify.app/"
+  status = 301
+  force = true
+  
+  
+  
+  
+  

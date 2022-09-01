@@ -21,6 +21,8 @@ MongoClient.connect(process.env.MONGO_URL, { useUnifiedTopology: true }, (err, c
 });
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "/public")));
+
 app.get("/", (req, res) => {
   res.send("hello voca-app");
 });
